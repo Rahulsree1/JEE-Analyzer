@@ -1,0 +1,120 @@
+body{
+    background-color: #4285f4;
+}
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #4285f4;
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: fit-content;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+
+}
+.marks{
+    text-align: center;
+}
+.marks h1{
+    font-size: 35px;
+}
+.marks h2{
+    font-size: 40px;
+    color: red;
+}
+.rank{
+    text-align: center;
+}
+.rank h1{
+    font-size: 35px;
+}
+.rank h2{
+    font-size: 35px;
+}
+
+.ran{
+    font-size: 40px;
+    color: green;
+}
+
+.st {
+    margin: 20px;
+    margin-top: 0;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .st::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .st:hover {
+    color: #e8e8e8;
+   }
+   
+   .st:hover::before {
+    width: 100%;
+   }
+
+.but{
+    display: flex;
+    padding: 15px;
+    
+}

@@ -1,0 +1,92 @@
+body{
+    background-color: #4285f4;
+}
+
+.dBody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+main{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 30px;
+}
+
+main h1{
+    color: black;
+    font-size: 30px;
+}
+
+p{
+    font-size: larger;
+}
+
+img{
+    border-radius: 50px;
+    padding: 20px;
+}
+
+li{
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px){
+    .mob{
+        flex-direction: column;
+    }
+}
