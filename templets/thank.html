@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Prediction</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/predict.css">
+    </head>
+    <body>
+        <div class="top">
+            <h1 style="font-size: 40px; color: white;">Prediction</h1>
+            <main>
+                <h1 style="color: black; font-size: 50px;font-weight: bolder;">Thankyou For Your Valuable Feedback!!</h1>
+                    
+            </main>
+            <div class="but">
+                <button id="h" class="st" onclick="bcwa('h','/')"> Home
+                </button>
+                <button id="fa" class="st" onclick="bcwa('fa','/faqs');"> FaQ's
+                </button>
+            </div>
+        </div>
+        <script>
+            function bcwa(i,l){
+            var ob = document.getElementById(i);
+            ob.addEventListener("click",function(){
+                window.location.href=l;
+            })
+        }
+        bcwa("bB","/form");
+        bcwa("h","/");
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/styles.css">
+
+    </head>
+    <body>
+        <button id = "bB">
+            <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+            <span>Back</span>
+          </button>
+    <div class="Dbody">
+        <h1 style="font-size: 40px; color: white; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;">Enter the following Details</h1>
+        <main style="padding-bottom: 5px;">
+            <form action="/predict" method="post">
+              <div class="question">
+                  <h2>Enter the number of hours you spend for <br>school related activities per day.</h2>
+                  <div class="inputGroup">
+                      <input type="number" required="" step="0.001" autocomplete="off" id="q1" name="q1">
+                      <label for="name">Hours</label>
+                  </div>
+              </div>
+              <div class="question">
+                  <h2>Rate your financial condition of your family.</h2>
+                  <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                      <p class="PB-range-slidervalue">0</p>
+                      <input id="q2" name="q2" class="slider" max="5" min="0" type="range">
+                      <p class="PB-range-slidervalue" id="l2">5</p>
+                  </div>
+              </div>
+              <div class="question">
+                  <h2>Rate the Education status of your parents.</h2>
+                  <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                      <p class="PB-range-slidervalue">0</p>
+                      <input id="q3" name="q3" id="myRange" class="slider" max="5" min="0" type="range">
+                      <p class="PB-range-slidervalue" id="l3">5</p>
+                  </div>
+              </div>
+              <div class="question">
+                  <h2>Effective study Hours for JEE per day.</h2>
+                  <div class="inputGroup">
+                      <input id="q4" name="q4" type="number" step="0.001" autocomplete="off">
+                      <label for="name">Hours</label>
+                  </div>
+              </div>
+              <div class="question">
+                  <h2>Rate the way your teacher taught you<br>during preparation.</h2>
+                  <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                      <p class="PB-range-slidervalue">0</p>
+                      <input id="q5" name="q5" id="myRange" class="slider" max="5" min="0" type="range">
+                      <p class="PB-range-slidervalue" id="l5">5</p>
+                  </div>
+              </div>
+                  <div class="question">
+                      <h2>Rate how much you were satisfied<br> with what your coaching taught you.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q6" name="q6" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l6">5</p>
+                      </div>
+                  </div>
+                      <div class="question">
+                          <h2>Enter your JEE mains percentile.</h2>
+                          <div class="inputGroup">
+                              <input id="q7" name="q7" type="number" step="0.000001" required="" autocomplete="off">
+                              <label for="name">Percentile</label>
+                          </div>
+                      </div>
+                  <div class="question">
+                      <h2>Rate your parental pressure.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q8" name="q8" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l8">5</p>
+                      </div>
+                  </div>
+                  <div class="question">
+                      <h2>Rate your own interest.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q9" name="q9" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l9">5</p>
+                      </div>
+                  </div>
+                  <div class="question">
+                      <h2>Rate the environment where you are<br> studying.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q10" name="q10" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l10">5</p>
+                      </div>
+                  </div>
+                  <div class="question">
+                      <h2>Rate your motivation.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q11" name="q11" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l11">5</p>
+                      </div>
+                  </div>
+                  <div class="question">
+                      <h2>Rate your consistency in the mocks.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q12" name="q12" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l12">5</p>
+                      </div>
+                  </div>
+                  <div class="question" style="border-bottom: 1px solid black;">
+                      <h2>Rate your nervousness.</h2>
+                      <div class="PB-range-slider-div" style="border-color: white; border-width: 0px;">
+                          <p class="PB-range-slidervalue">0</p>
+                          <input id="q13" name="q13" id="myRange" class="slider" max="5" min="0" type="range">
+                          <p class="PB-range-slidervalue" id="l13">5</p>
+                      </div>
+                  </div>
+  
+                  <div style="display: flex;justify-content: center; margin-top: 20px;">
+                  <button class="btn" type="submit" >
+                      <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+                          <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+                      </svg>
+                  
+                      <span class="text">Predict</span>
+                  </button> 
+              </div>
+              </form>      
+          </main>
+    </div>
+    <script>
+        
+        function uplab(inid,laid){
+            var slider = document.getElementById(inid);
+            var output = document.getElementById(laid);
+            output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+        }
+        var inlis = ["q2","q3","q5","q6","q8","q9","q10","q11","q12","q13"];
+        var lalis = ["l2","l3","l5","l6","l8","l9","l10","l11","l12","l13"];
+        for (let i = 0; i < inlis.length; i++) {
+            uplab(inlis[i],lalis[i]);
+            
+        }
+        function bcwa(i,l){
+            var ob = document.getElementById(i);
+            ob.addEventListener("click",function(){
+                window.location.href=l;
+            })
+        }
+        bcwa("bB","/");
+    </script>
+    </body>
+</html>
